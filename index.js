@@ -5,8 +5,7 @@ import cors from 'cors';
 const app = express();
 
 // ---- CONFIG ----
-// Allow only your Static Web App origin (replace later when you have the URL)
-const ALLOWED_ORIGIN = process.env.ALLOWED_ORIGIN || 'https://your-static-site.azurestaticapps.net';
+const ALLOWED_ORIGIN = process.env.ALLOWED_ORIGIN || 'https://yellow-hill-016ea1a1e.3.azurestaticapps.net';
 // Optional: simple “wake up” log
 app.get('/ping', (req, res) => res.json({ ok: true, message: 'API awake' }));
 
